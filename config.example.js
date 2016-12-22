@@ -19,8 +19,9 @@ exports.FB_REQ   = process.env.FB_REQ || 'search/request';
 exports.FB_RES   = process.env.FB_RES || 'search/response';
 
 // See https://firebase.google.com/docs/server/setup for instructions
-// to auto-generate the service-account.json file
-exports.FB_SERVICEACCOUNT = process.env.FB_ACC || 'service-account.json';
+// to auto-generate the service-account.json file. The default credentials
+// will be used https://developers.google.com/identity/protocols/application-default-credentials
+exports.FB_SERVICEACCOUNT = process.env.FB_ACC;
 
 /** ElasticSearch Settings
  *********************************************/
