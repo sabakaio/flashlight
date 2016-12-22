@@ -5,7 +5,7 @@
  */
 
 var elasticsearch = require('elasticsearch'),
-  conf = require('./config'),
+  conf = require(process.env.FB_CONFIG || './config'),
   fbutil = require('./lib/fbutil'),
   PathMonitor = require('./lib/PathMonitor'),
   SearchQueue = require('./lib/SearchQueue');
