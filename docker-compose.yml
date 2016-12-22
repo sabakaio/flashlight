@@ -7,6 +7,7 @@ services:
     environment:
       FB_URL: https://my-project.firebaseio.com
       ES_HOST: elasticsearch
+      FB_ACC: /opt/app/service-account.json
       NODE_ENV: production
     volumes:
       - ./service-account.json:/opt/app/service-account.json
